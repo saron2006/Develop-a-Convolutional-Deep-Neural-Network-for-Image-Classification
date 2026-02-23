@@ -188,7 +188,7 @@ def predict_image(model, image_index, dataset):
     plt.show()
     print(f'Actual: {class_names[label]}, Predicted: {class_names[predicted.item()]}')
 # Example Prediction
-predict_image(model, image_index=80, dataset=test_dataset)
+predict_image(model, image_index=26, dataset=test_dataset)
 
 ```
 
@@ -206,7 +206,7 @@ predict_image(model, image_index=80, dataset=test_dataset)
 <img width="556" height="358" alt="image" src="https://github.com/user-attachments/assets/160373a1-cc35-4733-9c05-a6dbc36de09d" />
 
 ### New Sample Data Prediction
-<img width="543" height="498" alt="image" src="https://github.com/user-attachments/assets/de65edb4-efae-4da9-9dd9-fd36e6a9a24c" />
+<img width="581" height="497" alt="image" src="https://github.com/user-attachments/assets/3aca1128-66db-4432-a90d-75712d81b9a9" />
 
 ## RESULT
 Thus, To develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images is executed and verified successfully.
