@@ -1,32 +1,36 @@
-# Develop a Convolutional Deep Neural Network for Image Classification
+# Developing a Neural Network Classification Model
 
 ## AIM
-To develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images.
+To develop a neural network classification model for the given dataset.
 
-##   PROBLEM STATEMENT AND DATASET
-Include the Problem Statement and Dataset.
+## THEORY
+An automobile company has plans to enter new markets with their existing products. After intensive market research, they’ve decided that the behavior of the new market is similar to their existing market.
+
+In their existing market, the sales team has classified all customers into 4 segments (A, B, C, D ). Then, they performed segmented outreach and communication for a different segment of customers. This strategy has work exceptionally well for them. They plan to use the same strategy for the new markets.
+
+You are required to help the manager to predict the right group of the new customers.
 
 ## Neural Network Model
-Include the neural network model diagram.
+<img width="741" height="858" alt="Screenshot 2026-02-10 112103" src="https://github.com/user-attachments/assets/af667028-b791-44ff-a02a-efe19f6aab3a" />
 
 ## DESIGN STEPS
-### STEP 1: 
-Import the required libraries (torch, torchvision, torch.nn, torch.optim) and load the image dataset with necessary preprocessing like normalization and transformation.
+### Step 1: Load and Preprocess Data
+Load the dataset, remove irrelevant columns (ID), handle missing values, encode categorical features using Label Encoding, and encode the target class (Segmentation).
 
-### STEP 2: 
-Split the dataset into training and testing sets and create DataLoader objects to feed images in batches to the CNN model.
+### Step 2: Feature Scaling and Data Split
+Split the dataset into training and testing sets, then normalize the input features using StandardScaler for better neural network performance.
 
-### STEP 3: 
-Define the CNN architecture using convolutional layers, ReLU activation, max pooling layers, and fully connected layers as implemented in the CNNClassifier class.
+### Step 3: Convert Data to PyTorch Tensors
+Convert the scaled training and testing data into PyTorch tensors and create DataLoader objects for batch-wise training and evaluation.
 
-### STEP 4: 
-Initialize the model, define the loss function (CrossEntropyLoss), and choose the optimizer (Adam) for training the network.
+### Step 4: Define the Neural Network Model
+Design a feedforward neural network with multiple fully connected layers and ReLU activation functions, ending with an output layer for multi-class classification.
 
-### STEP 5: 
-Train the model using the training dataset by performing forward pass, computing loss, backpropagation, and updating weights for multiple epochs.
+### Step 5: Train the Model
+Train the model using CrossEntropyLoss and Adam optimizer by performing forward propagation, loss calculation, backpropagation, and weight updates over multiple epochs.
 
-### STEP 6: 
-Evaluate the trained model on test images and verify the classification accuracy for new unseen images.
+### Step 6: Evaluate and Predict
+Evaluate the trained model on test data using accuracy, confusion matrix, and classification report, and perform prediction on a sample input.
 
 ## PROGRAM
 
